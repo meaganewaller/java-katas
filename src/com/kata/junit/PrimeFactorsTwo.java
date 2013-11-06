@@ -12,9 +12,8 @@ import java.util.*;
 public class PrimeFactorsTwo {
     public static List<Integer> generate(int number) {
         ArrayList<Integer> primes = new ArrayList<Integer>();
-        if(number == 2) {
-            primes.add(2);
-        }
+        if(number == 1) return primes;
+        primes.add(number);
         return primes;
     }
 }
