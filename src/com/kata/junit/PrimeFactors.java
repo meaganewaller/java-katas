@@ -1,5 +1,8 @@
 package com.kata.junit;
 
+import java.util.List;
+import java.util.ArrayList;
+
 /**
  * Created with IntelliJ IDEA.
  * User: meaganewaller
@@ -8,7 +11,21 @@ package com.kata.junit;
  * To change this template use File | Settings | File Templates.
  */
 public class PrimeFactors {
-    public String sayHello() {
-        return "Hello";
+    public static List<Integer> generate(int number)  {
+        ArrayList<Integer> primes = new ArrayList<Integer>();
+        if(number == 1) return primes;
+        int i = 1;
+        while(i <= number) {
+            i++;
+        while(number % i == 0) {
+            primes.add(i);
+            number = number/i;
+        }
+        }
+        if(number != 1) {
+        primes.add(number);
+        }
+        return primes;
+
     }
 }
