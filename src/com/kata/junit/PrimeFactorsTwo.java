@@ -13,7 +13,13 @@ public class PrimeFactorsTwo {
     public static List<Integer> generate(int number) {
         ArrayList<Integer> primes = new ArrayList<Integer>();
         if(number == 1) return primes;
-        primes.add(number);
+        if(number % 2 == 0) {
+            primes.add(2);
+            number = number/2;
+        }
+        if(number != 1) {
+            primes.add(number);
+        }
         return primes;
     }
 }
