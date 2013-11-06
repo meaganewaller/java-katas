@@ -72,5 +72,15 @@ public class PrimeFactorsTwoTest {
         assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void eightGeneratesTwoThreeTimes() throws Exception {
+        List actualResult = primeFactors.generate(8);
+        ArrayList expectedResult = new ArrayList<Integer>();
+        expectedResult.add(2);
+        expectedResult.add(2);
+        expectedResult.add(2);
+        assertEquals(expectedResult, actualResult);
+    }
+
 
 }
