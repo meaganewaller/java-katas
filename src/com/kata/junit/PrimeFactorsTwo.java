@@ -1,5 +1,7 @@
 package com.kata.junit;
 
+import java.util.*;
+
 /**
  * Created with IntelliJ IDEA.
  * User: meaganewaller
@@ -8,4 +10,7 @@ package com.kata.junit;
  * To change this template use File | Settings | File Templates.
  */
 public class PrimeFactorsTwo {
+    public static List<Integer> generate(int number) {
+        return new ArrayList<Integer>();
+    }
 }
