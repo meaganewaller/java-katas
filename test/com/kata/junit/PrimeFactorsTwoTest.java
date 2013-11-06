@@ -17,6 +17,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class PrimeFactorsTwoTest {
     private PrimeFactorsTwo primeFactors;
+    private ArrayList expectedResult = new ArrayList<Integer>();
 
     @Before
     public void setUp() throws Exception {
@@ -26,14 +27,12 @@ public class PrimeFactorsTwoTest {
     @Test
     public void oneGeneratesEmptyList() throws Exception {
         List actualResult = primeFactors.generate(1);
-        ArrayList expectedResult = new ArrayList<Integer>();
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
     public void twoGeneratesTwo() throws Exception {
         List actualResult = primeFactors.generate(2);
-        ArrayList expectedResult = new ArrayList<Integer>();
         expectedResult.add(2);
         assertEquals(expectedResult, actualResult);
     }
@@ -41,7 +40,6 @@ public class PrimeFactorsTwoTest {
     @Test
     public void threeGeneratesThree() throws Exception {
         List actualResult = primeFactors.generate(3);
-        ArrayList expectedResult = new ArrayList<Integer>();
         expectedResult.add(3);
         assertEquals(expectedResult, actualResult);
     }
@@ -49,7 +47,6 @@ public class PrimeFactorsTwoTest {
     @Test
     public void fourGeneratesTwoTwice() throws Exception {
         List actualResult = primeFactors.generate(4);
-        ArrayList expectedResult = new ArrayList<Integer>();
         expectedResult.add(2);
         expectedResult.add(2);
         assertEquals(expectedResult, actualResult);
@@ -58,7 +55,6 @@ public class PrimeFactorsTwoTest {
     @Test
     public void fiveGeneratesFive() throws Exception {
         List actualResult = primeFactors.generate(5);
-        ArrayList expectedResult = new ArrayList<Integer>();
         expectedResult.add(5);
         assertEquals(expectedResult, actualResult);
     }
@@ -66,7 +62,6 @@ public class PrimeFactorsTwoTest {
     @Test
     public void sixGeneratesTwoAndThree() throws Exception {
         List actualResult = primeFactors.generate(6);
-        ArrayList expectedResult = new ArrayList<Integer>();
         expectedResult.add(2);
         expectedResult.add(3);
         assertEquals(expectedResult, actualResult);
@@ -75,7 +70,6 @@ public class PrimeFactorsTwoTest {
     @Test
     public void eightGeneratesTwoThreeTimes() throws Exception {
         List actualResult = primeFactors.generate(8);
-        ArrayList expectedResult = new ArrayList<Integer>();
         expectedResult.add(2);
         expectedResult.add(2);
         expectedResult.add(2);
@@ -85,7 +79,6 @@ public class PrimeFactorsTwoTest {
     @Test
     public void nineGeneratesThreeTwoTimes() throws Exception {
         List actualResult = primeFactors.generate(9);
-        ArrayList expectedResult = new ArrayList<Integer>();
         expectedResult.add(3);
         expectedResult.add(3);
         assertEquals(expectedResult, actualResult);
@@ -94,7 +87,6 @@ public class PrimeFactorsTwoTest {
     @Test
     public void thirteenHundredGeneratesTwoTwiceFiveTwiceAndThirteen() throws Exception {
         List actualResult = primeFactors.generate(1300);
-        ArrayList expectedResult = new ArrayList<Integer>();
         expectedResult.add(2);
         expectedResult.add(2);
         expectedResult.add(5);
