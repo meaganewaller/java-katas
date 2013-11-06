@@ -63,5 +63,14 @@ public class PrimeFactorsTwoTest {
         assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void sixGeneratesTwoAndThree() throws Exception {
+        List actualResult = primeFactors.generate(6);
+        ArrayList expectedResult = new ArrayList<Integer>();
+        expectedResult.add(2);
+        expectedResult.add(3);
+        assertEquals(expectedResult, actualResult);
+    }
+
 
 }
