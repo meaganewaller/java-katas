@@ -1,6 +1,12 @@
 package com.kata.junit;
 
 import org.junit.Before;
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,4 +22,13 @@ public class PrimeFactorsTwoTest {
     public void setUp() throws Exception {
         primeFactors = new PrimeFactorsTwo();
     }
+
+    @Test
+    public void oneGeneratesEmptyList() throws Exception {
+        List actualResult = primeFactors.generate(1);
+        ArrayList expectedResult = new ArrayList<Integer>();
+        assertEquals(expectedResult, actualResult);
+    }
+
+
 }
