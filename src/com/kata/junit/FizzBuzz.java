@@ -5,7 +5,7 @@ public class FizzBuzz {
         if (input == 5) {
             return "buzz";
         }
-        else if (input == 3) {
+        else if (input % 3 == 0) {
             return "fizz";
         }
         return String.valueOf(input);
