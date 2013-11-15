@@ -11,5 +11,10 @@ public class FizzBuzzTest {
         assertEquals("1", FizzBuzz.generate(1));
     }
 
+    @Test
+    public void threeGeneratesFizz() throws Exception {
+        assertEquals("fizz", FizzBuzz.generate(3));
+    }
+
 
 }
